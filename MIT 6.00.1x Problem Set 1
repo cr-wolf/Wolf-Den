@@ -1,0 +1,38 @@
+numVowels = 0
+
+s = -randomly assigned-
+
+for char in s:
+    if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
+        numVowels += 1
+print("Number of vowels: " + str(numVowels))
+
+
+
+
+
+
+
+numbob = 0
+s = -randomly assigned-
+for x in range(len(s)):
+    if s[x:x+3] == "bob":
+        numbob += 1
+print("Number of times bob occurs is: " + str(numbob))
+
+
+
+
+
+s = "azcbobobegghakl" -randomly assigned-
+ans = ""
+hold = s[0]
+
+for i in range(len(s)-1):
+    if s[i] <= s[i+1]:
+        hold = hold + s[i+1]
+        if len(hold) > len(ans):
+            ans = hold
+    else:
+        hold = s[i+1]        
+print("Longest substring in alphabetical order is: " + ans)
